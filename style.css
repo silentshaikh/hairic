@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+.navbar {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 270px;
+    background-color: rgba(79, 231, 211, 0.5);
+    height: 100vh;
+    transition: 3s;
+    z-index: 10;
+}
+
+.li-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 160px;
+}
+
+.li-list li {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.li-list li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.li-list li:hover {
+    background-color: #4ce2d3;
+    border-radius: 5px;
+    transition: all 1s ease-in;
+    transform: scale(0.80);
+}
+
+.name h1 {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 30%;
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.fa-bars {
+    font-size: 2rem;
+    color: #fff;
+    position: fixed;
+    top: 4%;
+    right: 30px;
+    background-color: #00cec9;
+    box-shadow: 1px 2px 20px #fff;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.show-nav {
+    right: 0;
+}
+
+.hair-salon-page {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #00cec9), url(./banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img {
+    width: 115px;
+    border: 3px solid #fff;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4%;
+    left: 4%;
+}
+
+.salon-text {
+    padding-top: 180px;
+    color: #fff;
+    text-align: center;
+}
+
+.salon-text h1 {
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+    transition: 2s;
+}
+
+.salon-text h1:hover {
+
+    color: #00cec9;
+}
+
+.salon-text p {
+    font-size: 1rem;
+}
+
+.hair-btn {
+    text-align: center;
+    position: relative;
+    top: 4%;
+}
+
+.hair-btn button {
+    padding: 10px 30px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    transition: color 1s;
+}
+
+.hair-btn button span {
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 1s;
+
+}
+
+.hair-btn button:hover span {
+    width: 100%;
+}
+
+.hair-btn button:hover {
+    color: #009688;
+}
+
+.feature-salon {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title p {
+    color: #00cec9;
+    font-weight: 600;
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.title p::after {
+    content: "";
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(#009688, #fff);
+    transform: rotate(14deg);
+    border-top-left-radius: 35px;
+
+}
+
+
+.title h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.feature-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex-basis: 50%;
+}
+
+.feature-img {
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.feature-img img {
+    width: 70%;
+    border-radius: 20px;
+    border: 3px solid #00cec9;
+    padding: 10px;
+
+
+}
+
+.box h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    color: #009688;
+    margin-bottom: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+.descrip {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.fea-text p {
+    font-size: 1rem;
+    text-align: initial;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(79, 231, 211, 0.5);
+}
+
+.servi-page {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #e2d6d6;
+}
+
+.service-box {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.img-servi {
+
+    flex-basis: 48%;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-servi img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.over {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #00cec9);
+    opacity: 0;
+    transition: 2s;
+}
+
+.img-servi:hover .over {
+    opacity: 1;
+}
+
+.text-lay {
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 2s;
+}
+
+.text-lay h3 {
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+}
+
+.text-lay p {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0 30px;
+}
+
+hr {
+    height: 3px;
+    background-color: #fff;
+    width: 80%;
+    padding: 0 30px;
+    margin: auto;
+}
+
+.img-servi:hover .text-lay {
+    opacity: 1;
+    bottom: 50%;
+}
+
+.testi {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testi-col {
+    flex-basis: 32%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px #00968814;
+    transition: 2s;
+}
+
+.user {
+
+    cursor: pointer;
+
+}
+
+.testi-col:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.959), #56e0de);
+}
+
+.user img {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+
+}
+
+.name p {
+    font-size: 1.7rem;
+    font-family: 'Lobster', cursive;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), #00cec9);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.foot-container{
+    background-color: #e2d6d6;
+    padding: 80px 0;
+    position: relative;
+}
+.foot-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.foot-left{
+    flex-basis: 48%;
+    padding: 10px;
+}
+.foot-right{
+    flex-basis: 48%;
+    padding: 10px;
+    text-align: right;
+}
+.foot-left h2{
+    margin: 12px 0;
+     font-family: 'Lobster', cursive;
+     font-size: 1.8rem;
+     color: #00cec9;
+}
+.foot-right h2{
+    margin: 12px 0;
+     font-family: 'Lobster', cursive;
+     font-size: 2rem;
+     color: #00cec9;
+}
+.foot-left p{
+     line-height: 30px;
+     font-weight: 600;
+}
+.foot-right p{
+    line-height: 30px;
+    font-weight: 600;
+}
+.foot-img{
+    width: 300px;
+    opacity: 0.2;
+    
+    position: absolute;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.foot-links{
+    text-align: center;
+}
+.foot-links i{
+    margin-top: 40px;
+    height: 45px;
+    width: 50px;
+    line-height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 3px solid #4ce2d3;
+    color: white;
+    transition: 2s;
+}
+.foot-links i:hover{
+    background-color: #00cec9;
+    transform: translateY(-10px);
+}
+.foot-links p{
+    font-weight: 600;
+    padding: 10px 0;
+}
+@media only screen and (max-width:900px) {
+    .navbar {
+        z-index: 10;
+    }
+
+    .fa-bars {
+        z-index: 12;
+    }
+}
+
+@media only screen and (max-width:788px) {
+    .box {
+        flex-basis: 100%;
+    }
+
+    .feature-img {
+        flex-basis: 100%;
+    }
+
+    .testi-col {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .img-servi {
+        flex-basis: 100%;
+    }
+
+    .img-servi:hover .text-lay {
+        opacity: 1;
+        bottom: 25%;
+    }
+}
+
+    @media only screen and (max-width:603px) {
+        .testi-col {
+            flex-basis: 90%;
+        }
+    }
+
+    @media only screen and (max-width:385px) {
+        .text-lay {
+            font-size: 20px;
+        }
+
+        .img-servi:hover .text-lay {
+            opacity: 1;
+            bottom: 20%;
+        }
+    }
+
+    @media only screen and (max-width:385px) {
+        .text-lay h3 {
+            font-size: 30px;
+        }
+
+        .text-lay p {
+            font-size: 15px;
+            /* padding: 0 1px; */
+        }
+
+        .img-servi:hover .text-lay {
+            opacity: 1;
+            bottom: 14%;
+        }
+    }
+
+    @media only screen and (max-width:304px) {
+
+        .text-lay p {
+            padding: 0 1px;
+
+        }
+
+    }
+    @media only screen and (max-width:740px) {
+
+        .foot-left{
+            flex-basis: 100%;
+        }
+        .foot-right{
+            flex-basis: 100%;
+        }
+        .foot-img{
+            top: 22%;
+            width: 270px;
+        }
+
+    }
+    @media only screen and (max-width:655px) {
+
+       
+        .foot-img{
+            top: 17%;
+            
+            
+        }
+
+    }
